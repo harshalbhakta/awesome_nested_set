@@ -24,6 +24,7 @@ jobs:
           - rails_7_1
           - rails_7_2
           - rails_8_0
+          - rails_8_1
           - rails_main
         exclude:
           - ruby: 'head'
@@ -96,6 +97,12 @@ jobs:
           - ruby: '3.1'
             gemfile: rails_8_0
 
+          - ruby: '3.1'
+            gemfile: rails_8_1
+
+          - ruby: '3.2'
+            gemfile: rails_8_1
+
     env:
       BUNDLE_GEMFILE: ${{ github.workspace }}/gemfiles/${{ matrix.gemfile }}.gemfile
       BUNDLE_PATH_RELATIVE_TO_CWD: true
@@ -130,6 +137,7 @@ jobs:
           - rails_7_1
           - rails_7_2
           - rails_8_0
+          - rails_8_1
           - rails_main
         exclude:
           - ruby: 'head'
@@ -202,6 +210,12 @@ jobs:
           - ruby: '3.1'
             gemfile: rails_8_0
 
+          - ruby: '3.1'
+            gemfile: rails_8_1
+
+          - ruby: '3.2'
+            gemfile: rails_8_1
+
     env:
       BUNDLE_GEMFILE: ${{ github.workspace }}/gemfiles/${{ matrix.gemfile }}.gemfile
       BUNDLE_PATH_RELATIVE_TO_CWD: true
@@ -251,6 +265,7 @@ jobs:
           - rails_7_1
           - rails_7_2
           - rails_8_0
+          - rails_8_1
           - rails_main
         exclude:
           - ruby: 'head'
